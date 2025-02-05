@@ -1,0 +1,48 @@
+body {
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+.collapsible {
+    width: 500px;
+    margin: 20px;
+}
+
+.collapsible-button {
+	width: 100%;
+	padding: 10px;
+	text-align: left;
+	background-color: #f1f1f1;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.collapsible-button .label {
+	font-size: 16px;
+}
+
+.collapsible-button .arrow {
+	font-size: 16px;
+	transition: transform 0.3s ease;
+}
+
+.content {
+	padding: 10px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-top: none;
+	border-radius: 0 0 5px 5px;
+	display: none;
+}
+
+.collapsible.active .content {
+	display: block;
+}
+
+.collapsible.active .arrow {
+	transform: rotate(180deg);
+}
